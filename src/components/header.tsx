@@ -86,7 +86,7 @@ export default function Header() {
   return (
       <Popover>
         <div className='fixed z-10 flex min-h-[5rem] w-full items-center justify-center bg-purple-primary sm:h-16'>
-          <div className='flex h-16 sm:h-16 w-full items-center justify-center bg-purple-primary justify-between max-w-[80vw]'>
+          <div className='flex h-16 sm:h-16 w-full items-center bg-purple-primary justify-between max-w-[80vw]'>
             <div className=''>
               <h1>Logo aqui</h1>
             </div>
