@@ -3,6 +3,7 @@ import ButtonContato from './buttonContato';
 import { Fragment, useEffect, useState } from 'react';
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid';
+import Image from 'next/image';
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -98,7 +99,12 @@ export default function Header() {
         <div className='fixed z-10 flex min-h-[5rem] w-full items-center justify-center bg-purple-primary sm:h-16'>
           <div className='flex h-16 sm:h-16 w-full items-center bg-purple-primary justify-between max-w-[80vw]'>
             <div className=''>
-              <h1>Logo aqui</h1>
+              <Image
+              src="/Logo.png"
+              width={110}
+              height={10}
+              alt="Logo"
+              />
             </div>
             <div className=''>
               <nav className='hidden sm:flex relative gap-5 items-center md:gap-'>
@@ -156,12 +162,17 @@ export default function Header() {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-            <Popover.Panel focus className=' z-10 fixed inset-x-0 top-0 origin-top-right transform transition md:hidden'>
-              <div className='flex h-screen rounded-lg bg-purple-primary shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-white'>
-                <div className='flex items-start justify-start flex-col w-screen'>
-                  <div className=' h-16 flex flex-row items-center justify-between w-screen px-8'>
-                    <div className=''>
-                      <h1>Logo aqui</h1>
+            <Popover.Panel focus className='z-10 fixed inset-x-0 top-0 origin-top-right transform transition md:hidden'>
+              <div className='flex rounded-lg bg-purple-primary shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-white'>
+                <div className=' h-screen flex items-start justify-between flex-col w-screen'>
+                  <div className=' h-24 flex flex-row items-center justify-between w-screen px-8 border-solid border-b-[1px] border-white'>
+                    <div className='mt-2'>
+                      <Image
+                        src="/Logo.png"
+                        width={110}
+                        height={10}
+                        alt="Logo"
+                      />
                     </div>
                     <Popover.Button className='inline-flex items-center justify-center rounded-md bg-purple-primary p-2 text-white hover:bg-white hover:text-purple-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
                       <span className='sr-only'>Fechar menu</span>
@@ -169,7 +180,7 @@ export default function Header() {
                     </Popover.Button>
                   </div>
                   
-                  <div className=' grid gap-y-8 mt-8 w-full px-4'>
+                  <div className=' grid gap-y-8 mt-16 w-full px-16'>
                     <Popover.Button>
                       <a href="#topo" className='text-white' >Início</a>
                     </Popover.Button>
@@ -183,7 +194,7 @@ export default function Header() {
                       <a href="#feedback" className='text-white'>Feedbacks</a>
                     </Popover.Button>
                   </div>
-                  <div className=' absolute bottom-8 px-4 w-full'>
+                  <div className='relative mt-24 bottom-8 px-4 w-full'>
                     <ButtonContato active name="contato"/>
                   </div>
                 </div>

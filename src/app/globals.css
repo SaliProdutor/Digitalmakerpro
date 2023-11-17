@@ -10,6 +10,9 @@
   overflow-x: hidden;
 }
 
+p,h1,h2,a,h3{
+  overflow-y: hidden;
+}
 
 
 
