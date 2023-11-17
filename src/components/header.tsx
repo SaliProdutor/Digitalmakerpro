@@ -28,8 +28,8 @@ const navLinks = [
 
 export default function Header() {
   
-  const [hoverLink, setHoverLink] = useState('');
-  const [sectionLink, setSectionLink] = useState('');
+  const [hoverLink, setHoverLink] = useState('/#topo');
+  const [sectionLink, setSectionLink] = useState('/#topo');
 
   function atualiza(){
     if ( typeof  window !== 'undefined' ) 
@@ -41,10 +41,12 @@ export default function Header() {
     }
   }
   useEffect(()=>{
+    if(sectionLink == null){
     setSectionLink(`/${window.location.hash}`);
       setTimeout(function() {
         setHoverLink(`/${window.location.hash}`)
       }, 100);
+    }
   })
 
   useEffect(() => {
