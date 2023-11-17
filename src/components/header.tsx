@@ -112,8 +112,8 @@ export default function Header() {
                   navLinks.map((item:any, index:any) => {
                       const isActive = item.path === sectionLink;
                       return (
-                        <Link key={item.path} href={item.path} className={`text-white px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 ease-in ${isActive ? "text-zinc-200 z-[2]" : "text-zinc-500 opacity-[.8]"}`}
-                        onMouseOver={()=> setHoverLink(item.path)}
+                        <Link key={item.path} href={item.path} className={`text-white px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 hover:opacity-[1] ease-in ${isActive ? "text-zinc-200 z-[2]" : "text-zinc-500 opacity-[.8]"}`}
+                        //onMouseOver={()=> setHoverLink(item.path)}
                         onMouseLeave={()=> setHoverLink(sectionLink)}
                         onClick={()=> setSectionLink(item.path)}
                         >
@@ -194,7 +194,7 @@ export default function Header() {
                       <a href="#feedback" className='text-white'>Feedbacks</a>
                     </Popover.Button>
                   </div>
-                  <div className='relative mt-24 bottom-8 px-4 w-full'>
+                  <div className='relative mt-24 bottom-8 px-4 w-full mb-16'>
                     <ButtonContato active name="contato"/>
                   </div>
                 </div>

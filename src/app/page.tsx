@@ -23,9 +23,9 @@ export default function Home() {
   return (
     <main className="">
       {/* Banner topo */}
-      <div id="topo" data-section="topo" className='flex bg-purple-secundary h-screen w-screen items-center px-24 gap-8'>
-          <div className="flex w-[50%] flex-col cursor-default">
-            <h1 className='text-green-primary font-700 text-[4rem] font-extrabold leading-none cl'>SUA MARCA</h1>
+      <div id="topo" data-section="topo" className='md:flex bg-purple-secundary h-screen w-screen items-center px-24 gap-8 sm:grid'>
+          <div className="md:flex md:w-[50%] flex-col cursor-default sm:w-full">
+            <h1 className='text-green-primary font-700 text-[4rem] font-extrabold leading-none'>SUA MARCA</h1>
             <h2 className='text-white font-light text-[1.7rem] leading-none'>nossas soluções personalizadas</h2>
             <p className='text-white opacity-[.7] pt-8'>
               Na Digital Maker, não apenas oferecemos serviços de marketing; 
