@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import ButtonContato from './buttonContato';
 import { Fragment, useEffect, useState } from 'react';
 import { Popover, Transition } from '@headlessui/react'
@@ -27,10 +27,70 @@ const navLinks = [
 ]
 
 export default function Header() {
-  const [hoverLink, setHoverLink] = useState(`/${window.location.hash}`);
-  const [sectionLink, setSectionLink] = useState(`/${window.location.hash}`);
+  
+  const [hoverLink, setHoverLink] = useState('');
+  const [sectionLink, setSectionLink] = useState('');
 
- 
+  function atualiza(){
+    if ( typeof  window !== 'undefined' ) 
+    { 
+      setSectionLink(`/${window.location.hash}`);
+      setTimeout(function() {
+        setHoverLink(`/${window.location.hash}`)
+      }, 100);
+    }
+  }
+  useEffect(()=>{
+    setSectionLink(`/${window.location.hash}`);
+      setTimeout(function() {
+        setHoverLink(`/${window.location.hash}`)
+      }, 100);
+  })
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('div[data-section]');
+      
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 5 && rect.bottom >= window.innerHeight / 5) {
+          const sectionId = section.getAttribute('data-section');
+          
+          // Verifica se a navegação por scroll está ativa
+          const isNavigating = Boolean(sessionStorage.getItem('isNavigating'));
+
+          if (!isNavigating) {
+            // Atualiza a URL com o ID da seção apenas se não houver navegação ativa
+            window.history.pushState(null,'null' ,`#${sectionId}`)
+            atualiza();
+          }
+        }
+      });
+    };
+
+    // Adiciona um ouvinte de evento de scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove o ouvinte quando o componente é desmontado
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+
+  }, []);
+
+  const handleButtonClick = (sectionId:any) => {
+    // Marca que uma navegação está ativa para evitar a atualização da URL durante o scroll
+    sessionStorage.setItem('isNavigating', 'true');
+
+    // Atualiza a URL com o ID da seção
+    window.history.pushState( null,'null', `#${sectionId}`);
+    atualiza();
+
+    // Limpa a marcação após um pequeno atraso
+    setTimeout(() => {
+      sessionStorage.removeItem('isNavigating');
+    }, 100); // Ajuste conforme necessário
+  };
   return (
       <Popover>
         <div className='fixed z-10 flex min-h-[5rem] w-full items-center justify-center bg-purple-primary sm:h-16'>
