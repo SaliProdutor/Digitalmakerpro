@@ -29,7 +29,7 @@ export default function Footer() {
           <FaBehance/>
         </a>
 
-        <a className='text-white text-[1.5rem]' href="https://instagram.com/digital_maker_pro" target="_blank" rel="noopener noreferrer">
+        <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' href="https://instagram.com/digital_maker_pro" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
         </a>
       </div>
