@@ -21,10 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-purple-white`}>
-        <Head>
-          <link rel='icon' href='/favicon.ico'/>
-        </Head>
-        <Header/>
+
         {children}
         <Footer/>
       </body>
