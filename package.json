@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,6 +15,7 @@
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^10.16.5",
     "next": "14.0.2",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",

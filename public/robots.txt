@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://digitalmakerpro.com
+
+# Sitemaps
+Sitemap: https://digitalmakerpro.com/sitemap.xml
