@@ -3,22 +3,7 @@ import Button from "@/components/button";
 import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    // Verifica se há um fragmento na URL
-    const hash = window.location.hash;
-    if (hash) {
-      // Remove o "#" do início do fragmento
-      const targetId = hash.substring(1);
 
-      // Encontra o elemento alvo usando o ID
-      const targetElement = document.getElementById(targetId);
-
-      // Scroll suave para o elemento alvo
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, []);
 
   return (
     <main className="">
