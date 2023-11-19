@@ -16,7 +16,9 @@ const config: Config = {
       'green-primary': '#4ED3AF',
       'green-secundary': '#3FA585',
       'white-primary' : '#FFFFFF',
-      'purple-white' : '#E9D8FF'
+      'purple-white' : '#E9D8FF',
+      'muted-foreground' : '#F6F6F6',
+      'dark-muted-foreground': '#100B00'
     },
     extend: {},
   },

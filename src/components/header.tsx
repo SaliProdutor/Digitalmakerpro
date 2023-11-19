@@ -14,12 +14,12 @@ const navLinks = [
     name: "Início"
   },
   {
-    path: "/#solucoes",
-    name: "Soluções"
-  },
-  {
     path: "/#sobre",
     name: "Sobre"
+  },
+  {
+    path: "/#solucoes",
+    name: "Soluções"
   },
   {
     path: "/#feedback",
@@ -41,16 +41,14 @@ export default function Header() {
       }, 100);
     }
   }
-  useEffect(()=>{
-    if(sectionLink == null){
-    setSectionLink(`/${window.location.hash}`);
-      setTimeout(function() {
-        setHoverLink(`/${window.location.hash}`)
-      }, 100);
-    }
-  })
 
   useEffect(() => {
+    if(sectionLink == null){
+      setSectionLink(`/${window.location.hash}`);
+        setTimeout(function() {
+          setHoverLink(`/${window.location.hash}`)
+        }, 100);
+      }
     const handleScroll = () => {
       const sections = document.querySelectorAll('div[data-section]');
       

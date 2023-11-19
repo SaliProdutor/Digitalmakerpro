@@ -11,7 +11,7 @@ export default function ButtonContato({name, active}:any) {
       'text-white-primary text-transform: capitalize text-[1rem]'
       :
       'text-white-primary hover:text-black text-transform: none text-[1rem]'
-      }>{name}</a>
+      } href='https://api.whatsapp.com/send?phone=5551997696794' target="_blank">{name}</a>
     </div>
   )
 }

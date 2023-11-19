@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import { Link } from 'react-router-dom';
-import { FaTwitter, FaBehance, FaInstagram } from 'react-icons/fa';
+import { FaBehance, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   //Function que adiciona o ano no rodapé do site

@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
 
@@ -38,9 +37,9 @@ export default function Button({name, preenchido, link, color}:Props) {
   return (
     <div className={ 
       preenchido == true ? 
-      `bg-${color} rounded-full px-4 py-2 relative cursor-pointer border-solid border-[1px] border-transparent hover:bg-transparent hover:border-${colorfontbtn}`
+      `hover:border-${colorfontbtn} bg-${color} rounded-full px-4 py-2 relative cursor-pointer border-solid border-[1px] border-black hover:bg-transparent`
       :
-      `rounded-full px-4 py-2 relative cursor-pointer border-solid border-[1px] border-${color} hover:bg-${colorfontbtn}`
+      `hover:bg-${color} rounded-full px-4 py-2 relative cursor-pointer border-solid border-[1px] border-${color} hover:bg-${colorfontbtn}`
     }>
         
       <Link href={link} className={
@@ -48,7 +47,7 @@ export default function Button({name, preenchido, link, color}:Props) {
         `text-${colorfontbtn} text-transform: capitalize font-light`
         :
         `text-${color} font-light`
-    }>{colorfontbtn}</Link>
+    }>{name}</Link>
     </div>
   )
 }
