@@ -1,15 +1,13 @@
-
 import feedbacks from "@/database/feedbaks";
-import Image from "next/image";
 import { FaRegStar, FaStarHalfAlt, FaStar } from "react-icons/fa";
+import Card from "./Cards/Card";
+
 
 
 export function CardFeedback(){
     const dadosFeedbacks =  feedbacks
-
-    
-
     return(
+        
         dadosFeedbacks.slice(0, 3).map((item:any, index:any) => {
             const renderStars = () => {
                 const renderedStars = [];
@@ -30,24 +28,11 @@ export function CardFeedback(){
                   return renderedStars;
                 };
         return (
-            <div key={index} className="gap-x-16 flex flex-col justify-start items-center h-full">
-                <Image 
-                src={item.photo != '' ? item.photo : '/sobre-sali.jpg'}
-                alt={`foto ${item.name}`}
-                width={500}
-                height={500}
-                quality="95"
-                placeholder="empty"
-                className=" w-40 h-40 rounded-lg aspect-square object-cover overflow-hidden mb-8"
-                />
-                <a className="text-xl font-bold">{item.name}</a>
-                <div className="flex flex-row mb-8">{renderStars()}</div>
-                <div className=" w-48">
-                    <p className=" text-center">{item.depoiment}</p>
-                </div>
-                
-            </div>
+           
+                <Card key={item.index} id={item.id} name={item.name} photo={item.photo} render={renderStars()} depoiment={item.depoiment}/>
+      
         )
         })
+ 
     )
 }

@@ -94,7 +94,7 @@ export default function Header() {
   };
   return (
       <Popover>
-        <div className='fixed z-10 flex min-h-[5rem] w-full items-center justify-center bg-purple-primary sm:h-16'>
+        <div className='overflow-x-hidden fixed z-10 flex min-h-[5rem] w-full items-center justify-center bg-purple-primary sm:h-16'>
           <div className='flex h-16 sm:h-16 w-full items-center bg-purple-primary justify-between max-w-[80vw]'>
             <div className=''>
               <Image
@@ -110,7 +110,7 @@ export default function Header() {
                   navLinks.map((item:any, index:any) => {
                       const isActive = item.path === sectionLink;
                       return (
-                        <Link key={item.path} href={item.path} className={`text-white px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 hover:opacity-[1] ease-in ${isActive ? "text-zinc-200 z-[2]" : "text-zinc-500 opacity-[.8]"}`}
+                        <Link key={item.path} href={item.path} className={`text-white overflow-x-hidden px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 hover:opacity-[1] ease-in ${isActive ? "text-zinc-200 z-[2]" : "text-zinc-500 opacity-[.8]"}`}
                         //onMouseOver={()=> setHoverLink(item.path)}
                         onMouseLeave={()=> setHoverLink(sectionLink)}
                         onClick={()=> setSectionLink(item.path)}

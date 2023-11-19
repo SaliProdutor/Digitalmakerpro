@@ -9,7 +9,7 @@ export default function Footer() {
   // -- FIM DA FUNCTION ANO RODAPÉ -- //
 
   return (
-    <div className='bg-gradient-to-t from-purple-primary to-purple-secundary flex flex-col'>
+    <div className='bg-gradient-to-br from-[#0b0929] to-purple-primary flex flex-col'>
       {/* Logo Digital Maker */}
       <div className='px-16 flex justify-center items-center pb-32 pt-16 flex-col'>
       <Image

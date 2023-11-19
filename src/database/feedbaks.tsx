@@ -15,7 +15,7 @@ const feedbacks = [
       },
       {
         id: "03",
-        photo: "",
+        photo: "/depoimentos/thiago.jpeg",
         name: "Thiago Paradouro",
         stars: "1.5",
         depoiment: "Wellington e sua equipe da Digital Maker Pro são mestres em gestão de mídias! Alcançamos nosso público de forma eficaz. Serviço de excelência!"
@@ -30,7 +30,7 @@ const feedbacks = [
       {
         id: "05",
         photo: "",
-        name: "Camila Paradouro",
+        name: "Diana Ross",
         stars: "3.5",
         depoiment: "O trabalho da Digital Maker Pro na gestão de tráfego pago foi crucial para nosso crescimento. Resultados tangíveis e um parceiro confiável. Top!"
       },

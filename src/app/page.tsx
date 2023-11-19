@@ -4,6 +4,7 @@ import { CardFeedback } from "@/components/cardFeedback";
 import Image from "next/image";
 import { useEffect } from "react";
 import { FaBehance, FaInstagram, FaCode, FaCamera, FaFilm, FaPenNib } from 'react-icons/fa';
+import { FaMeta } from "react-icons/fa6";
 import { SiAnalogue } from "react-icons/si";
 
 export default function Home() {
@@ -25,10 +26,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col justify-center items-center w-screen">
+    <main className="">
       {/* Banner topo */}
-      <div id="topo" data-section="topo" className='container flex justify-center items-center pt-[5rem] space-y-6 py-8 md:py-12 lg:py-32 bg-gradient-to-bl from-purple-primary to-purple-secundary min-w-full h-screen'>
-        <div className="container flex max-w-[64rem] flex-col items-center text-center gap-4">
+      <div id="topo" data-section="topo" className='container flex justify-center items-center pt-[5rem] py-16 md:py-12 lg:py-32 bg-gradient-to-bl from-purple-primary to-purple-secundary w-screen h-screen'>
+        <div className="flex max-w-[64rem] sm:w-[95vw] flex-col items-center text-center gap-4">
           <h1 className=' text-4xl md:text-6xl lg-text-7xl text-green-primary font-bold'>SUA MARCA</h1>
           <h2 className='text-white font-light text-[1.7rem] leading-none'>nossas soluções personalizadas</h2>
           <p className='max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8'>
@@ -68,7 +69,7 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-24 -right-4 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaCamera/>
-                  <a>Fotográfo</a>
+                  <a>Fotógrafo</a>
                 </div>
                 <div className="absolute bottom-32 -left-4 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaPenNib/>
@@ -97,44 +98,92 @@ export default function Home() {
         </div>
       </div>
       {/* Soluções */}
-      <div id="solucoes" data-section="solucoes" className='mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3 '>
-        <div className="relative overflow-hidden rounded-2xl border bg-white p-2">
-          <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-            <FaCode/>
+      <div id="solucoes" data-section="solucoes" className=' bg-white-primary w-screen py-16 flex flex-col gap-4 justify-center items-center'>
+        <h1 className="font-bold text-2xl text-black mb-16">Principais Serviços</h1>
+        <div className="p-2 grid-cols-2 md:p-8 mx-auto grid justify-between gap-4 sm:grid-cols-2 min-w-[95vw] md:min-w-[64rem] md:grid-cols-3 bg-muted-foreground rounded-2xl">
+          <div className="relative overflow-hidden rounded-2xl border bg-white">
+            <div className="flex cursor-default max-h-[180px] h-8 flex-row justify-between items-center rounded-md p-6 bg-green-primary">
+              <FaCode/>
+              <h2>Dev</h2>
+            </div>
+            <ul className="p-4 gap-2 cursor-default">
+              <li className="text-lg md:text-base">Sites OnePage</li>
+              <li className="text-lg md:text-base">Landing page</li>
+              <li className="text-lg md:text-base">E-commerce</li>
+              <li className="text-lg md:text-base">Site Institucional</li>
+              <li className="text-lg md:text-base">Sistemas e Apps</li>
+              <li className="text-lg md:text-base">SEO</li>
+            </ul>
           </div>
-        </div>
-        <div className="relative overflow-hidden rounded-2xl border bg-white p-2">
-          <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-            <FaCode/>
+          <div className="relative overflow-hidden rounded-2xl border bg-white">
+            <div className="flex cursor-default max-h-[180px] h-8 flex-row justify-between items-center rounded-md p-6 bg-green-primary">
+              <FaCamera/>
+              <h2>Fotógrafo</h2>
+            </div>
+            <ul className="p-4 gap-2 cursor-default">
+              <li className="text-lg md:text-base">Foto da empresa</li>
+              <li className="text-lg md:text-base">Foto de produtos</li>
+              <li className="text-lg md:text-base">Foto da equipe </li>
+            </ul>
           </div>
-        </div>
-        <div className="relative overflow-hidden rounded-2xl border bg-white p-2">
-          <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-            <FaCode/>
+          <div className="relative overflow-hidden rounded-2xl border bg-white">
+            <div className="flex cursor-default max-h-[180px] h-8 flex-row justify-between items-center rounded-md p-6 bg-green-primary">
+              <FaPenNib/>
+              <h2>Desing</h2>
+            </div>
+            <ul className="p-4 gap-2 cursor-default">
+              <li className="text-lg md:text-base">Logotipo</li>
+              <li className="text-lg md:text-base">Identidade Visual</li>
+              <li className="text-lg md:text-base">Artes impressas</li>
+              <li className="text-lg md:text-base">Artes digitais</li>
+            </ul>
           </div>
-        </div>
-        <div className="relative overflow-hidden rounded-2xl border bg-white p-2">
-          <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-            <FaCode/>
+          <div className="relative overflow-hidden rounded-2xl border bg-white">
+            <div className="flex cursor-default max-h-[180px] h-8 flex-row justify-between items-center rounded-md p-6 bg-green-primary">
+              <FaFilm/>
+              <h2>Filmaker</h2>
+            </div>
+            <ul className="p-4 gap-2 cursor-default">
+              <li className="text-lg md:text-base">Video de produtos</li>
+              <li className="text-lg md:text-base">Video Institucional</li>
+              <li className="text-lg md:text-base">Reels para redes</li>
+              <li className="text-lg md:text-base">Edição de conteúdo</li>
+            </ul>
           </div>
-        </div>
-        <div className="relative overflow-hidden rounded-2xl border bg-white p-2">
-          <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-            <FaCode/>
+          <div className="relative overflow-hidden rounded-2xl border bg-white">
+            <div className="flex cursor-default max-h-[180px] h-8 flex-row justify-between items-center rounded-md p-6 bg-green-primary">
+              <SiAnalogue/>
+              <h2>Gestor de Tráfego</h2>
+            </div>
+            <ul className="p-4 gap-2 cursor-default">
+              <li className="text-lg md:text-base">SEO de rankeamento</li>
+              <li className="text-lg md:text-base">Tráfego pago</li>
+              <li className="text-lg md:text-base">Google Ads</li>
+              <li className="text-lg md:text-base">Google Meu Negócio</li>
+              <li className="text-lg md:text-base">Gerenciado de Anúncios</li>
+              <li className="text-lg md:text-base">Otimização de público</li>
+            </ul>
           </div>
-        </div>
-        <div className="relative overflow-hidden rounded-2xl border bg-white p-2">
-          <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-            <FaCode/>
+          <div className="relative overflow-hidden rounded-2xl border bg-white">
+            <div className="flex cursor-default max-h-[180px] h-8 flex-row justify-between items-center rounded-md p-6 bg-green-primary">
+              <FaMeta/>
+              <h2>Social Media</h2>
+            </div>
+            <ul className="p-4 gap-2 cursor-default">
+              <li className="text-lg md:text-base">Análise de métricas</li>
+              <li className="text-lg md:text-base">Gestão de media</li>
+              <li className="text-lg md:text-base">Agendamento de postagens</li>
+            </ul>
           </div>
         </div>
       </div>
       
       {/* Feedback */}
-      <div id="feedback" data-section="feedback" className='mx-auto grid justify-center gap-4 sm:grid-cols-0 sm:snap-y md:max-w-[64rem] md:grid-cols-3 min-w-full'>
-
-            <CardFeedback/>
-
+      <div id="feedback" data-section="feedback" className='flex gap-16 md:gap-8 flex-col items-center justify-center bg-gradient-to-bl from-purple-primary to-[#0b0929] md:max-w-full py-16'>
+        <h1 className="text-white font-bold text-2xl">Feedbacks</h1>
+        <div className="max-w-[64rem] mx-auto grid justify-center gap-4 sm:grid-cols-2 md:grid-cols-3 snap-x sm:p-8">
+          <CardFeedback/>
+        </div>
       </div>
     </main>
   )
