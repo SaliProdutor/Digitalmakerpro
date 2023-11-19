@@ -8,6 +8,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p,h1,h2,a,h3{
