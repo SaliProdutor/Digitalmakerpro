@@ -1,11 +1,6 @@
 "use client"
 import Button from "@/components/button";
 import { useEffect } from "react";
-import { ImageResponse } from '@vercel/og';
- 
-export const config = {
-  runtime: 'edge',
-};
 
 export default function Home() {
   useEffect(() => {
