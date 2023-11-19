@@ -8,8 +8,76 @@ const inter = Inter({ subsets: ['latin']})
 
 
 export const metadata: Metadata = {
-  title: 'Digital Maker Pro',
+  title: {
+    template: '%s | Digital Maker Pro',
+    default: 'Digital Maker Pro',
+    absolute: 'Digital Maker Pro',
+  },
   description: 'Na Digital Maker, não só oferecemos marketing, mas uma parceria estratégica para o crescimento personalizado da sua marca, transformando sua visão em realidade',
+  keywords: [
+    'Web design',
+    'Fotográfo',
+    'Videomaker',
+    'Filmaker',
+    'Marketing digital',
+    'Assessoria de marketing',
+    'Agência de publicidade',
+    'Marketing',
+    'Design gráfico',
+    'Social media',
+    'Planejamento estrátegico',
+    'Publicidade',
+    'Gestor de tráfego',
+    'Campanhas de marketing',
+    'Agência que cuida de rede social',
+    'Sali',
+    'Sali Produtor',
+    'Digital Maker Pro',
+    'Digital Maker Pro Igrejinha'
+  ],
+  creator: 'Sali Produtor | Digital Maker Dev',
+  publisher: 'Digital Maker Pro | Vercel',
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+  alternates: {
+    canonical: '/',
+    languages: {
+      'pt-BR': '/',
+    },
+  },
+  openGraph: {
+    title: 'Digital Maker Pro',
+    description: 'Na Digital Maker, não só oferecemos marketing, mas uma parceria estratégica para o crescimento personalizado da sua marca, transformando sua visão em realidade',
+    url: 'https://digitalmakerpro.com',
+    siteName: 'Digital Maker Pro',
+    images: '/Miniatura.png',
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Digital Maker Pro',
+    description: 'Na Digital Maker, não só oferecemos marketing, mas uma parceria estratégica para o crescimento personalizado da sua marca, transformando sua visão em realidade',
+    creator: 'Digital Maker Pro',
+    images: ['https://digitalmakerpro/Miniatura.png'],
+  },
+  category: 'Maketing Digital',
 }
 export const viewport: Viewport = {
   themeColor: '#713BB3',
