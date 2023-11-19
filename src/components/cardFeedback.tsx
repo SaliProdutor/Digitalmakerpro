@@ -30,7 +30,7 @@ export function CardFeedback(){
                   return renderedStars;
                 };
         return (
-            <div className="gap-x-16 flex flex-col justify-start items-center h-full">
+            <div key={index} className="gap-x-16 flex flex-col justify-start items-center h-full">
                 <Image 
                 src={item.photo != '' ? item.photo : '/sobre-sali.jpg'}
                 alt={`foto ${item.name}`}
