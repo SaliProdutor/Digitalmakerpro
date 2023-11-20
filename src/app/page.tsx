@@ -52,8 +52,8 @@ export default function Home() {
                 <Image 
                   src="/sobre-sali.jpg" 
                   alt="Sali Produtor" 
-                  width={100} 
-                  height={100} 
+                  width={800} 
+                  height={800} 
                   quality='95' 
                   priority={true} 
                   placeholder="blur"
