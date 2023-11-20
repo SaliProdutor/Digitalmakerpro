@@ -2,6 +2,7 @@
 import Button from "@/components/button";
 import { CardFeedback } from "@/components/cardFeedback";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
 import { FaBehance, FaInstagram, FaCode, FaCamera, FaFilm, FaPenNib } from 'react-icons/fa';
 import { FaMeta } from "react-icons/fa6";
@@ -29,22 +30,22 @@ export default function Home() {
     <main className="">
       {/* Banner topo */}
       <div id="topo" data-section="topo" className='container flex justify-center items-center pt-[5rem] py-16 md:py-12 lg:py-32 bg-gradient-to-bl from-purple-primary to-purple-secundary w-screen h-screen'>
-        <div className="flex max-w-[64rem] sm:w-[95vw] flex-col items-center text-center gap-4">
-          <h1 className=' text-4xl md:text-6xl lg-text-7xl text-green-primary font-bold'>SUA MARCA</h1>
-          <h2 className='text-white font-light text-[1.7rem] leading-none'>nossas soluções personalizadas</h2>
-          <p className='max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8'>
-            Na Digital Maker, não apenas oferecemos serviços de marketing; 
-            oferecemos uma parceria estratégica para o crescimento personalizado 
-            da sua marca. Seja qual for a sua visão, estamos aqui para transformá-la em realidade.</p>
-          <div className="flex flex-row gap-4 pt-12">
-            <Button name="Soluções" link="#solucoes" preenchido color="green-primary"/>
-            <Button name="Sobre" link="#sobre" color="white"/>
-          </div>
+        <div className="w-screen sm:w-[95vw] md:max-w-[64rem] p-8">
+          <h1 className=' sm:text-4xl md:text-6xl lg:text:7xl text-green-primary font-bold'>SUA MARCA</h1>
+          <h2 className='text-white font-light sm:text-xl md:text-2xl lg:text:4xl'>nossas soluções personalizadas</h2>
+            <p className='max-w-[32rem] pt-8 text-md text-muted-foreground'>
+              Na Digital Maker, não apenas oferecemos serviços de marketing; 
+              oferecemos uma parceria estratégica para o crescimento personalizado 
+              da sua marca. Seja qual for a sua visão, estamos aqui para transformá-la em realidade.</p>
+            <div className="flex flex-row gap-4 pt-12">
+              <Link href='/#solucoes' className="bg-green-primary hover:bg-green-primary py-2 px-4 rounded-full text-white hover:text-white hover:border-white border-green-primary border-[1px]">Soluções</Link>
+              <Link href='/#sobre' className="bg-green-transparent hover:bg-green-primary py-2 px-4 rounded-full text-white hover:text-white hover:border-white border-white border-[1px]">Sobre</Link>
+            </div>
         </div>
       </div>
       {/* Sobre */}
-      <div id="sobre" data-section="sobre" className="container grid justify-center items-center bg-gradient-to-bl from-green-primary to-green-secundary min-w-full" >
-        <div className='container md:max-w-[64rem] md:py-12 lg:py-48'>
+      <div id="sobre" data-section="sobre" className="container pt-[5rem] grid justify-center items-center bg-gradient-to-bl from-green-primary to-green-secundary min-w-full" >
+        <div className='w-screen sm:w-[95vw] md:max-w-[64rem] p-8'>
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-y-12 lg:grid-rows-[auto-1fr]">
             <div className="lg:pl-20 flex justify-center">
               <div className="relative mx-w-xs px-2.5 lg:max-w-none">
@@ -98,9 +99,9 @@ export default function Home() {
         </div>
       </div>
       {/* Soluções */}
-      <div id="solucoes" data-section="solucoes" className=' bg-white-primary w-screen py-16 flex flex-col gap-4 justify-center items-center'>
+      <div id="solucoes" data-section="solucoes"  className='md:pt-[10rem] sm:pt-4 bg-white-primary w-screen py-16 flex flex-col gap-4 justify-center items-center'>
         <h1 className="font-bold text-2xl text-black mb-16">Principais Serviços</h1>
-        <div className="p-2 grid-cols-2 md:p-8 mx-auto grid justify-between gap-4 sm:grid-cols-2 min-w-[95vw] md:min-w-[64rem] md:grid-cols-3 bg-muted-foreground rounded-2xl">
+        <div className="p-2 grid-cols-2 md:p-8 mx-auto grid justify-between gap-2 sm:grid-cols-2 min-w-[95vw] md:min-w-[64rem] md:grid-cols-3 bg-muted-foreground rounded-2xl">
           <div className="relative overflow-hidden rounded-2xl border bg-white">
             <div className="flex cursor-default max-h-[180px] h-8 flex-row justify-between items-center rounded-md p-6 bg-green-primary">
               <FaCode/>
@@ -179,7 +180,7 @@ export default function Home() {
       </div>
       
       {/* Feedback */}
-      <div id="feedback" data-section="feedback" className='flex gap-16 md:gap-8 flex-col items-center justify-center bg-gradient-to-bl from-purple-primary to-[#0b0929] md:max-w-full py-16'>
+      <div id="feedback" data-section="feedback" className='md:pt-[10rem] sm:pt-4 flex gap-16 md:gap-8 flex-col items-center justify-center bg-gradient-to-bl from-purple-primary to-[#0b0929] md:max-w-full py-16'>
         <h1 className="text-white font-bold text-2xl">Feedbacks</h1>
         <div className="max-w-[64rem] mx-auto grid justify-center gap-4 sm:grid-cols-2 md:grid-cols-3 snap-x sm:p-8">
           <CardFeedback/>
