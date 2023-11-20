@@ -180,16 +180,16 @@ export default function Header() {
                   
                   <div className=' grid gap-y-8 mt-16 w-full px-16'>
                     <Popover.Button>
-                      <a href="#topo" className='text-white' >Início</a>
+                      <a href="#topo" aria-label="Topo da página" className='text-white' >Início</a>
                     </Popover.Button>
                     <Popover.Button>
-                      <a href="#solucoes" className='text-white' >Soluções</a>
+                      <a href="#solucoes" aria-label="Nossas soluções" className='text-white' >Soluções</a>
                     </Popover.Button>
                     <Popover.Button>
-                      <a href="#sobre" className='text-white' >Sobre</a>
+                      <a href="#sobre" aria-label="Sobre a nossa empresa" className='text-white' >Sobre</a>
                     </Popover.Button>
                     <Popover.Button>
-                      <a href="#feedback" className='text-white'>Feedbacks</a>
+                      <a href="#feedback" aria-label="Feedbaks" className='text-white'>Feedbacks</a>
                     </Popover.Button>
                   </div>
                   <div className='relative mt-24 bottom-8 px-4 w-full mb-16'>

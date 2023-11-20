@@ -38,8 +38,8 @@ export default function Home() {
               oferecemos uma parceria estratégica para o crescimento personalizado 
               da sua marca. Seja qual for a sua visão, estamos aqui para transformá-la em realidade.</p>
             <div className="flex flex-row gap-4 pt-12">
-              <a href='/#solucoes' className="bg-green-primary md:hover:bg-green-primary py-2 px-4 rounded-full text-black md:hover:text-white md:hover:border-white border-black border-[1px]">Soluções</a>
-              <a href='/#sobre' className="bg-green-transparent md:hover:bg-green-primary py-2 px-4 rounded-full text-white md:hover:text-white md:hover:border-white border-white border-[1px]">Sobre</a>
+              <a href='/#solucoes' aria-label="Conheça nossas soluções" className="bg-green-primary md:hover:bg-green-primary py-2 px-4 rounded-full text-black md:hover:text-white md:hover:border-white border-black border-[1px]">Soluções</a>
+              <a href='/#sobre' aria-label="Sobre a nossa empresa" className="bg-green-transparent md:hover:bg-green-primary py-2 px-4 rounded-full text-white md:hover:text-white md:hover:border-white border-white border-[1px]">Sobre</a>
             </div>
         </div>
       </div>
@@ -86,11 +86,11 @@ export default function Home() {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Sali Produtor</h1>
               <p className="mt-6 text-base text-dark-muted-foreground">Como é conhecido <span className="font-medium">Wellington Gabriel Ramos de Souza</span>, representa a essência da Digital Maker Pro, uma empresa que vai além do convencional, oferecendo soluções digitais verdadeiramente personalizadas. Sua abordagem centrada no cliente e sua habilidade em fornecer exatamente o que cada cliente precisa para atingir seus objetivos fazem da Digital Maker Pro a escolha ideal para empresas que buscam uma presença online impactante e eficaz.</p>
               <div className='mt-6 flex justify-center md:justify-start gap-6'>
-                <a className='opacity-[.8] text-white text-2xl hover:opacity-[1] transition-2000' href="https://www.behance.net/sali_produtor" target="_blank" rel="noopener noreferrer">
+                <a className='opacity-[.8] text-white text-2xl hover:opacity-[1] transition-2000' aria-label="Nosso perfil na Behance" href="https://www.behance.net/sali_produtor" target="_blank" rel="noopener noreferrer">
                   <FaBehance/>
                 </a>
 
-                <a className='opacity-[.8] text-white text-2xl hover:opacity-[1] transition-2000' href="https://instagram.com/sali_produtor" target="_blank" rel="noopener noreferrer">
+                <a className='opacity-[.8] text-white text-2xl hover:opacity-[1] transition-2000' aria-label="Nosso perfil no Instagram" href="https://instagram.com/sali_produtor" target="_blank" rel="noopener noreferrer">
                     <FaInstagram />
                 </a>
               </div>

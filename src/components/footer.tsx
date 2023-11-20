@@ -24,14 +24,14 @@ export default function Footer() {
       
       {/* Icones sociais */}
       <div className='flex flex-row gap-8 mt-8'>
-        <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' href="https://www.behance.net/DigitalMakerPro" target="_blank" rel="noopener noreferrer">
+        <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' aria-label="Nosso perfil no Behance" href="https://www.behance.net/DigitalMakerPro" target="_blank" rel="noopener noreferrer">
           <FaBehance/>
         </a>
 
-        <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' href="https://instagram.com/digital_maker_pro" target="_blank" rel="noopener noreferrer">
+        <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' aria-label="Nosso perfil no Instagram" href="https://instagram.com/digital_maker_pro" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
         </a>
-        <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' href="https://youtube.com/@DigitalMakerPro" target="_blank" rel="noopener noreferrer">
+        <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' aria-label="Nosso canal no YouTube" href="https://youtube.com/@DigitalMakerPro" target="_blank" rel="noopener noreferrer">
             <FaYoutube/>
         </a>
       </div>
