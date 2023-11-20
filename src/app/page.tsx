@@ -52,8 +52,8 @@ export default function Home() {
                 <Image 
                   src="/sobre-sali.jpg" 
                   alt="Sali Produtor" 
-                  width={800} 
-                  height={800} 
+                  width={100} 
+                  height={100} 
                   quality='95' 
                   priority={true} 
                   placeholder="blur"
@@ -62,23 +62,23 @@ export default function Home() {
                 />
                 <div className="absolute top-16 -left-4 md-left-0 md:top-16 ml-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaCode/>
-                  <a>Dev</a>
+                  <p>Dev</p>
                 </div>
                 <div className="absolute top-16 -right-6 md:top-20 md:right-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaFilm/>
-                  <a>Filmaker</a>
+                  <p>Filmaker</p>
                 </div>
                 <div className="absolute bottom-24 -right-4 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaCamera/>
-                  <a>Fotógrafo</a>
+                  <p>Fotógrafo</p>
                 </div>
                 <div className="absolute bottom-24 md:bottom-32 -left-4 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaPenNib/>
-                  <a>Design</a>
+                  <p>Design</p>
                 </div>
                 <div className="absolute bottom-0 right-0 mr-32 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <SiAnalogue />
-                  <a>Gestor</a>
+                  <p>Gestor</p>
                 </div>
               </div>
             </div>

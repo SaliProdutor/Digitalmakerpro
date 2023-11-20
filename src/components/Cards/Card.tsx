@@ -14,15 +14,15 @@ export default function Card({id, name, photo, render, depoiment}:CardProps){
             <Image 
                 src={photo != '' ? photo : '/sobre-sali.jpg'}
                 alt={`foto ${name}`}
-                width={500}
-                height={500}
+                width={100}
+                height={100}
                 quality="95"
                 placeholder="empty"
                 objectPosition="center top"
                 className=" w-full h-full rounded-lg aspect-square object-cover overflow-hidden mb-8"
             />
             <div className="w-full absolute min-h-[14rem] bottom-0 p-4 bg-muted-foreground rounded-2xl">
-                <a className="text-xl font-bold">{name}</a>
+                <h2 className="text-xl font-bold">{name}</h2>
                 <div className="flex flex-row mb-4">{render}</div>
                 <p className=" text-start">{depoiment.slice(0, 160)}</p>
             </div>

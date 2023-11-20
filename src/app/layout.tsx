@@ -42,12 +42,6 @@ export const metadata: Metadata = {
     address: true,
     telephone: true,
   },
-  alternates: {
-    canonical: '/',
-    languages: {
-      'pt-BR': '/',
-    },
-  },
   openGraph: {
     title: 'Digital Maker Pro',
     description: 'Na Digital Maker, não só oferecemos marketing, mas uma parceria estratégica para o crescimento personalizado da sua marca, transformando sua visão em realidade',
