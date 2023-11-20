@@ -78,7 +78,7 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-0 right-0 mr-32 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <SiAnalogue />
-                  <a>Gestor de tráfego</a>
+                  <a>Gestor</a>
                 </div>
               </div>
             </div>
@@ -108,12 +108,12 @@ export default function Home() {
               <h2>Dev</h2>
             </div>
             <ul className="p-4 gap-2 cursor-default">
-              <li className="text-lg md:text-base">Sites OnePage</li>
-              <li className="text-lg md:text-base">Landing page</li>
-              <li className="text-lg md:text-base">E-commerce</li>
-              <li className="text-lg md:text-base">Site Institucional</li>
-              <li className="text-lg md:text-base">Sistemas e Apps</li>
-              <li className="text-lg md:text-base">SEO</li>
+              <li className="text-lg md:text-base mb-2">Sites OnePage</li>
+              <li className="text-lg md:text-base mb-2">Landing page</li>
+              <li className="text-lg md:text-base mb-2">E-commerce</li>
+              <li className="text-lg md:text-base mb-2">Site Institucional</li>
+              <li className="text-lg md:text-base mb-2">Sistemas e Apps</li>
+              <li className="text-lg md:text-base mb-2">SEO</li>
             </ul>
           </div>
           <div className="relative overflow-hidden rounded-2xl border bg-white">
@@ -122,9 +122,9 @@ export default function Home() {
               <h2>Fotógrafo</h2>
             </div>
             <ul className="p-4 gap-2 cursor-default">
-              <li className="text-lg md:text-base">Foto da empresa</li>
-              <li className="text-lg md:text-base">Foto de produtos</li>
-              <li className="text-lg md:text-base">Foto da equipe </li>
+              <li className="text-lg md:text-base mb-2">Foto da empresa</li>
+              <li className="text-lg md:text-base mb-2">Foto de produtos</li>
+              <li className="text-lg md:text-base mb-2">Foto da equipe </li>
             </ul>
           </div>
           <div className="relative overflow-hidden rounded-2xl border bg-white">
@@ -133,10 +133,10 @@ export default function Home() {
               <h2>Desing</h2>
             </div>
             <ul className="p-4 gap-2 cursor-default">
-              <li className="text-lg md:text-base">Logotipo</li>
-              <li className="text-lg md:text-base">Identidade Visual</li>
-              <li className="text-lg md:text-base">Artes impressas</li>
-              <li className="text-lg md:text-base">Artes digitais</li>
+              <li className="text-lg md:text-base mb-2">Logotipo</li>
+              <li className="text-lg md:text-base mb-2">Identidade Visual</li>
+              <li className="text-lg md:text-base mb-2">Artes impressas</li>
+              <li className="text-lg md:text-base mb-2">Artes digitais</li>
             </ul>
           </div>
           <div className="relative overflow-hidden rounded-2xl border bg-white">
@@ -145,24 +145,24 @@ export default function Home() {
               <h2>Filmaker</h2>
             </div>
             <ul className="p-4 gap-2 cursor-default">
-              <li className="text-lg md:text-base">Video de produtos</li>
-              <li className="text-lg md:text-base">Video Institucional</li>
-              <li className="text-lg md:text-base">Reels para redes</li>
-              <li className="text-lg md:text-base">Edição de conteúdo</li>
+              <li className="text-lg md:text-base mb-2">Video de produtos</li>
+              <li className="text-lg md:text-base mb-2">Video Institucional</li>
+              <li className="text-lg md:text-base mb-2">Reels para redes</li>
+              <li className="text-lg md:text-base mb-2">Edição de conteúdo</li>
             </ul>
           </div>
           <div className="relative overflow-hidden rounded-2xl border bg-white">
             <div className="flex cursor-default max-h-[180px] h-8 flex-row justify-between items-center rounded-md p-6 bg-green-primary">
               <SiAnalogue/>
-              <h2>Gestor de Tráfego</h2>
+              <h2>Gestor</h2>
             </div>
             <ul className="p-4 gap-2 cursor-default">
-              <li className="text-lg md:text-base">SEO de rankeamento</li>
-              <li className="text-lg md:text-base">Tráfego pago</li>
-              <li className="text-lg md:text-base">Google Ads</li>
-              <li className="text-lg md:text-base">Google Meu Negócio</li>
-              <li className="text-lg md:text-base">Gerenciado de Anúncios</li>
-              <li className="text-lg md:text-base">Otimização de público</li>
+              <li className="text-lg md:text-base mb-2">Campanhas</li>
+              <li className="text-lg md:text-base mb-2">Tráfego pago</li>
+              <li className="text-lg md:text-base mb-2">Google Ads</li>
+              <li className="text-lg md:text-base mb-2">Google Meu Negócio</li>
+              <li className="text-lg md:text-base mb-2">Gerenciado de Anúncios</li>
+              <li className="text-lg md:text-base mb-2">Otimização de público</li>
             </ul>
           </div>
           <div className="relative overflow-hidden rounded-2xl border bg-white">
@@ -171,9 +171,9 @@ export default function Home() {
               <h2>Social Media</h2>
             </div>
             <ul className="p-4 gap-2 cursor-default">
-              <li className="text-lg md:text-base">Análise de métricas</li>
-              <li className="text-lg md:text-base">Gestão de media</li>
-              <li className="text-lg md:text-base">Agendamento de postagens</li>
+              <li className="text-lg md:text-base mb-2">Análise de métricas</li>
+              <li className="text-lg md:text-base mb-2">Gestão de media</li>
+              <li className="text-lg md:text-base mb-2">Agendamento de postagens</li>
             </ul>
           </div>
         </div>
