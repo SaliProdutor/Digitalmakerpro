@@ -38,8 +38,8 @@ export default function Home() {
               oferecemos uma parceria estratégica para o crescimento personalizado 
               da sua marca. Seja qual for a sua visão, estamos aqui para transformá-la em realidade.</p>
             <div className="flex flex-row gap-4 pt-12">
-              <Link href='#solucoes' className="bg-green-primary md:hover:bg-green-primary py-2 px-4 rounded-full text-white md:hover:text-white md:hover:border-white border-green-primary border-[1px]">Soluções</Link>
-              <Link href='#sobre' className="bg-green-transparent md:hover:bg-green-primary py-2 px-4 rounded-full text-white md:hover:text-white md:hover:border-white border-white border-[1px]">Sobre</Link>
+              <a href='/#solucoes' className="bg-green-primary md:hover:bg-green-primary py-2 px-4 rounded-full text-white md:hover:text-white md:hover:border-white border-green-primary border-[1px]">Soluções</a>
+              <a href='/#sobre' className="bg-green-transparent md:hover:bg-green-primary py-2 px-4 rounded-full text-white md:hover:text-white md:hover:border-white border-white border-[1px]">Sobre</a>
             </div>
         </div>
       </div>
