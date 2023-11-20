@@ -18,7 +18,7 @@ export default function Card({id, name, photo, render, depoiment}:CardProps){
                 height={500}
                 quality="95"
                 placeholder="empty"
-                objectPosition="center top"
+                objectPosition="center center"
                 className=" w-full h-full rounded-lg aspect-square object-cover overflow-hidden mb-8"
             />
             <div className="w-full absolute min-h-[14rem] bottom-0 p-4 bg-muted-foreground rounded-2xl">

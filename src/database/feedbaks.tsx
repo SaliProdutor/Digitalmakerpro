@@ -16,21 +16,21 @@ const feedbacks = [
       {
         id: "03",
         photo: "/depoimentos/thiago.jpg",
-        name: "Thiago Paradouro",
+        name: "Thiago Lampert",
         stars: "5",
         depoiment: "Wellington e sua equipe da Digital Maker Pro são mestres em gestão de mídias! Alcançamos nosso público de forma eficaz. Serviço de excelência!"
       },
       {
         id: "04",
-        photo: "",
-        name: "Camila Paradouro",
+        photo: "/depoimentos/camila.jpg",
+        name: "Camila Melo",
         stars: "5",
         depoiment: "A Digital Maker Pro é a escolha certa para quem busca um site estratégico e visualmente cativante. Soluções personalizadas que geram impacto real!"
       },
       {
         id: "05",
         photo: "/depoimentos/diana.jpg",
-        name: "Diana Ross",
+        name: "Diana Roos",
         stars: "5",
         depoiment: "Baita profissional, trabalho maravilhoso!"
       },
