@@ -1,5 +1,4 @@
 "use client"
-import ButtonContato from './buttonContato';
 import { Fragment, useEffect, useState } from 'react';
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid';
@@ -142,7 +141,7 @@ export default function Header() {
               </nav>
             </div>
             <div className='hidden sm:block'>
-              <ButtonContato active name="contato"/>
+              <a aria-label="Contato" className='flex justify-center items-center bg-green-primary md:hover:bg-green-primary py-2 cursor-pointer px-4 rounded-full text-black md:hover:text-white md:hover:border-white border-black border-[1px]' href='https://api.whatsapp.com/send?phone=5551997696794' target="_blank">Contato</a>
             </div>
             {/* MENU HAMBURGER */}
             <div className='flex grow items-center justify-end sm:hidden'>
@@ -193,7 +192,7 @@ export default function Header() {
                     </Popover.Button>
                   </div>
                   <div className='relative mt-24 bottom-8 px-4 w-full mb-16'>
-                    <ButtonContato active name="contato"/>
+                    <a aria-label="Contato" className='flex justify-center items-center bg-green-primary md:hover:bg-green-primary py-2 cursor-pointer px-4 rounded-full text-black md:hover:text-white md:hover:border-white border-black border-[1px]' href='https://api.whatsapp.com/send?phone=5551997696794' target="_blank">Contato</a>
                   </div>
                 </div>
               </div>

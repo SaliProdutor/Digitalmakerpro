@@ -18,7 +18,7 @@ const feedbacks = [
         photo: "/depoimentos/thiago.jpg",
         name: "Thiago Lampert",
         stars: "5",
-        depoiment: "Wellington e sua equipe da Digital Maker Pro são mestres em gestão de mídias! Alcançamos nosso público de forma eficaz. Serviço de excelência!"
+        depoiment: "Ótimo trabalho e muito profissional!!"
       },
       {
         id: "04",
