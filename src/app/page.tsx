@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <main className="">
       {/* Banner topo */}
-      <div id="topo" data-section="topo" className='container flex justify-center items-center pt-[5rem] py-16 md:py-12 lg:py-32 bg-gradient-to-bl from-purple-primary to-purple-secundary w-screen h-screen'>
+      <div id="topo" data-section="topo" className='container flex justify-center items-center pt-[5rem] py-16 md:py-12 lg:py-32 bg-gradient-to-bl from-purple-primary to-purple-secundary min-w-[100vw] h-screen'>
         <div className="sm:w-[95vw] md:max-w-[64rem] p-8">
           <h1 className='text-4xl md:text-6xl lg:text-7xl text-green-primary font-bold'>SUA MARCA</h1>
           <h2 className='text-white font-light text-xl md:text-2xl lg:text:4xl'>nossas soluções personalizadas</h2>
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </div>
       {/* Sobre */}
-      <div id="sobre" data-section="sobre" className="container pt-[5rem] grid justify-center items-center bg-gradient-to-bl from-green-primary to-green-secundary w-screen" >
+      <div id="sobre" data-section="sobre" className="container pt-[5rem] grid justify-center items-center bg-gradient-to-bl from-green-primary to-green-secundary min-w-[100vw] h-screen" >
         <div className='w-screen sm:w-[95vw] md:max-w-[64rem] p-8'>
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-y-12 lg:grid-rows-[auto-1fr]">
             <div className="lg:pl-20 flex justify-center">

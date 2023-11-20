@@ -1,14 +1,28 @@
+"use client"
 import feedbacks from "@/database/feedbaks";
 import { FaRegStar, FaStarHalfAlt, FaStar } from "react-icons/fa";
 import Card from "./Cards/Card";
+import { useEffect, useState } from "react";
 
-
+interface CardProps {
+  id: number;
+  photo: string;
+  name: string;
+  stars?: string;
+  depoiment: string;
+  render: any;
+}
 
 export function CardFeedback(){
-    const dadosFeedbacks =  feedbacks
+    const dadosFeedbacks =  feedbacks;
+    const [randomarray, setRandomArray] = useState<any>([]);
+    useEffect(()=>{
+      const data = dadosFeedbacks.slice().sort(() => 0.5 - Math.random()).slice(0, 3);
+      setRandomArray(data)
+    },[])
     return(
         
-        dadosFeedbacks.slice(0, 3).map((item:any, index:any) => {
+        randomarray.map((item:any, index:any) => {
             const renderStars = () => {
                 const renderedStars = [];
                 const stars = item.stars;
