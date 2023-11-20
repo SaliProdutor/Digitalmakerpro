@@ -58,13 +58,13 @@ export default function Home() {
                   priority={true} 
                   placeholder="blur"
                   blurDataURL="/sobre-sali.jpg"
-                  className="aspect-square rotate-3 rounded-2xl bg-white object-cover overflow-hidden scale-[.8] sm:scale[1]"
+                  className="aspect-square rotate-3 rounded-2xl bg-white object-cover overflow-hidden scale-[.8]"
                 />
-                <div className="absolute top-24 left-2 md-left-0 md:top-16 ml-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
+                <div className="absolute top-16 -left-4 md-left-0 md:top-16 ml-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaCode/>
                   <a>Dev</a>
                 </div>
-                <div className="absolute top-20 right-0 md:top-20 md:right-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
+                <div className="absolute top-16 -right-6 md:top-20 md:right-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaFilm/>
                   <a>Filmaker</a>
                 </div>
