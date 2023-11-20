@@ -15,7 +15,7 @@ const feedbacks = [
       },
       {
         id: "03",
-        photo: "/thiago.jpg",
+        photo: "/thiago-01.jpg",
         name: "Thiago Paradouro",
         stars: "1.5",
         depoiment: "Wellington e sua equipe da Digital Maker Pro são mestres em gestão de mídias! Alcançamos nosso público de forma eficaz. Serviço de excelência!"
