@@ -14,8 +14,8 @@ export default function Card({id, name, photo, render, depoiment}:CardProps){
             <Image 
                 src={photo != '' ? photo : '/sobre-sali.jpg'}
                 alt={`foto ${name}`}
-                width={480}
-                height={480}
+                width={500}
+                height={500}
                 quality="95"
                 placeholder="empty"
                 objectPosition="center top"
