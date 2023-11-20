@@ -30,9 +30,9 @@ export default function Home() {
     <main className="">
       {/* Banner topo */}
       <div id="topo" data-section="topo" className='container flex justify-center items-center pt-[5rem] py-16 md:py-12 lg:py-32 bg-gradient-to-bl from-purple-primary to-purple-secundary w-screen h-screen'>
-        <div className="w-screen sm:w-[95vw] md:max-w-[64rem] p-8">
-          <h1 className=' sm:text-4xl md:text-6xl lg:text:7xl text-green-primary font-bold'>SUA MARCA</h1>
-          <h2 className='text-white font-light sm:text-xl md:text-2xl lg:text:4xl'>nossas soluções personalizadas</h2>
+        <div className="sm:w-[95vw] md:max-w-[64rem] p-8">
+          <h1 className='text-4xl md:text-6xl lg:text-7xl text-green-primary font-bold'>SUA MARCA</h1>
+          <h2 className='text-white font-light text-xl md:text-2xl lg:text:4xl'>nossas soluções personalizadas</h2>
             <p className='max-w-[32rem] pt-8 text-md text-muted-foreground'>
               Na Digital Maker, não apenas oferecemos serviços de marketing; 
               oferecemos uma parceria estratégica para o crescimento personalizado 
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </div>
       {/* Sobre */}
-      <div id="sobre" data-section="sobre" className="container pt-[5rem] grid justify-center items-center bg-gradient-to-bl from-green-primary to-green-secundary min-w-full" >
+      <div id="sobre" data-section="sobre" className="container pt-[5rem] grid justify-center items-center bg-gradient-to-bl from-green-primary to-green-secundary w-screen" >
         <div className='w-screen sm:w-[95vw] md:max-w-[64rem] p-8'>
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-y-12 lg:grid-rows-[auto-1fr]">
             <div className="lg:pl-20 flex justify-center">
@@ -58,13 +58,13 @@ export default function Home() {
                   priority={true} 
                   placeholder="blur"
                   blurDataURL="/sobre-sali.jpg"
-                  className="aspect-square rotate-3 rounded-2xl bg-white object-cover overflow-hidden scale-[.8]"
+                  className="aspect-square rotate-3 rounded-2xl bg-white object-cover overflow-hidden scale-[.8] sm:scale[1]"
                 />
-                <div className="absolute top-16 ml-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
+                <div className="absolute top-24 left-2 md-left-0 md:top-16 ml-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaCode/>
                   <a>Dev</a>
                 </div>
-                <div className="absolute top-20 right-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
+                <div className="absolute top-20 right-0 md:top-20 md:right-2 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaFilm/>
                   <a>Filmaker</a>
                 </div>
@@ -72,7 +72,7 @@ export default function Home() {
                   <FaCamera/>
                   <a>Fotógrafo</a>
                 </div>
-                <div className="absolute bottom-32 -left-4 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
+                <div className="absolute bottom-24 md:bottom-32 -left-4 px-8 py-4 z-[2] bg-white rounded-2xl flex flex-row justify-center items-center gap-2 scale-[.7]">
                   <FaPenNib/>
                   <a>Design</a>
                 </div>

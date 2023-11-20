@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { FaBehance, FaInstagram } from 'react-icons/fa';
+import { FaBehance, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 export default function Footer() {
   //Function que adiciona o ano no rodapé do site
@@ -30,6 +30,9 @@ export default function Footer() {
 
         <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' href="https://instagram.com/digital_maker_pro" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
+        </a>
+        <a className='opacity-[.8] text-white text-[1.5rem] hover:opacity-[1] transition-2000' href="https://youtube.com/@DigitalMakerPro" target="_blank" rel="noopener noreferrer">
+            <FaYoutube/>
         </a>
       </div>
       </div>
