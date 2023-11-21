@@ -84,7 +84,7 @@ export default function Home() {
             </div>
             <div className="lg:order-first sm:px-2 md:pt-8 lg:pt-12">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Sali Produtor</h1>
-              <p className="mt-6 text-base text-dark-muted-foreground">Como é conhecido <span className="font-medium">Wellington Gabriel Ramos de Souza</span>, representa a essência da Digital Maker Pro, uma empresa que vai além do convencional, oferecendo soluções digitais verdadeiramente personalizadas. Sua abordagem centrada no cliente e sua habilidade em fornecer exatamente o que cada cliente precisa para atingir seus objetivos fazem da Digital Maker Pro a escolha ideal para empresas que buscam uma presença online impactante e eficaz.</p>
+              <p className="mt-6 text-base text-dark-muted-foreground">Como é conhecido <span className="font-medium">Sali Produtor</span>, representa a essência da Digital Maker Pro, uma empresa que vai além do convencional, oferecendo soluções digitais verdadeiramente personalizadas. Sua abordagem centrada no cliente e sua habilidade em fornecer exatamente o que cada cliente precisa para atingir seus objetivos fazem da Digital Maker Pro a escolha ideal para empresas que buscam uma presença online impactante e eficaz.</p>
               <div className='mt-6 flex justify-center md:justify-start gap-6'>
                 <a className='opacity-[.8] text-white text-2xl hover:opacity-[1] transition-2000' aria-label="Nosso perfil na Behance" href="https://www.behance.net/sali_produtor" target="_blank" rel="noopener noreferrer">
                   <FaBehance/>

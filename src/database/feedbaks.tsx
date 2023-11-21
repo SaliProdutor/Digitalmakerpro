@@ -8,10 +8,10 @@ const feedbacks = [
     },
     {
         id: "02",
-        photo: "",
-        name: "Marcos Schoror",
+        photo: "/depoimentos/camila.jpg",
+        name: "Marcos Schroer",
         stars: "5",
-        depoiment: "Incrível como a Digital Maker Pro transformou nossa identidade visual. Profissionalismo e criatividade impecáveis. Resultados surpreendentes!"
+        depoiment: "Empresa séria pontual, entrega o que promete, profissional qualificado, atendimento excepcional, super indico! Fiz alguns cartões de visitas a um tempo atrás ficou ótimo, trabalho muito bom."
       },
       {
         id: "03",
