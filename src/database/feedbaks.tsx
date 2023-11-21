@@ -8,7 +8,7 @@ const feedbacks = [
     },
     {
         id: "02",
-        photo: "/depoimentos/camila.jpg",
+        photo: "/depoimentos/marcos.jpg",
         name: "Marcos Schroer",
         stars: "5",
         depoiment: "Empresa séria pontual, entrega o que promete, profissional qualificado, atendimento excepcional, super indico! Fiz alguns cartões de visitas a um tempo atrás ficou ótimo, trabalho muito bom."
