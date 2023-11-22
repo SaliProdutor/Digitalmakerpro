@@ -1,8 +1,6 @@
 "use client"
-import Button from "@/components/button";
 import { CardFeedback } from "@/components/cardFeedback";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect } from "react";
 import { FaBehance, FaInstagram, FaCode, FaCamera, FaFilm, FaPenNib } from 'react-icons/fa';
 import { FaMeta } from "react-icons/fa6";

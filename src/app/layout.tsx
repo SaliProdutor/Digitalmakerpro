@@ -34,7 +34,8 @@ export const metadata: Metadata = {
     'Sali',
     'Sali Produtor',
     'Digital Maker Pro',
-    'Digital Maker Pro Igrejinha'
+    'Digital Maker Pro Igrejinha',
+    'Digital Maker'
   ],
   creator: 'Sali Produtor | Digital Maker Dev',
   publisher: 'Digital Maker Pro | Vercel',
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
     title: 'Digital Maker Pro',
     description: 'Na Digital Maker, não só oferecemos marketing, mas uma parceria estratégica para o crescimento personalizado da sua marca, transformando sua visão em realidade',
     creator: 'Digital Maker Pro',
-    images: ['https://digitalmakerpro/Miniatura.png'],
+    images: ['/Miniatura.png'],
   },
   category: 'Maketing Digital',
 }
