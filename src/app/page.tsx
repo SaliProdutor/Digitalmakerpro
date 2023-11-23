@@ -297,15 +297,15 @@ useLayoutEffect(()=>{
         <div className="max-w-[64rem] mx-auto grid justify-between gap-4 sm:grid-cols-2 md:grid-cols-3 snap-x sm:p-8 p-4">
           <div className="flex flex-row gap-4 items-center">
             <FaWhatsapp size={20}/>
-            <a aria-label="WhatsApp" href="https://api.whatsapp.com/send?phone=5551997696794" target="_blank" rel="noopener noreferrer">(51) 9.9769-6794</a>
+            <a aria-label="WhatsApp" href="WhtsApp: (51) 9.9769-6794" target="_blank" rel="noopener noreferrer">(51) 9.9769-6794</a>
           </div>
           <div className="flex flex-row gap-4 items-center">
             <MdMailOutline size={20}/>
-            <a aria-label="Email para contato" href="mailto:contato@digitalmakerpro.com" target="_blank" rel="noopener noreferrer">contato@digitalmakerpro.com</a>
+            <a aria-label="Email: contato@digitalmakerpro.com" href="mailto:contato@digitalmakerpro.com" target="_blank" rel="noopener noreferrer">contato@digitalmakerpro.com</a>
           </div>
           <div className="flex flex-row gap-4 items-center">
             <FaLocationDot size={20}/>
-            <a aria-label="Endereço" href="https://maps.app.goo.gl/3LcL2fKFjrrD99Jb7" target="_blank" rel="noopener noreferrer">R. Alberto Bahns, 110, Invernada - Igrejinha/RS 95650-000</a>
+            <a aria-label="Endereço: R. Alberto Bahns, 110, Invernada - Igrejinha/RS 95650-000" href="https://maps.app.goo.gl/3LcL2fKFjrrD99Jb7" target="_blank" rel="noopener noreferrer">R. Alberto Bahns, 110, Invernada - Igrejinha/RS 95650-000</a>
           </div>
         </div>
       </div>
