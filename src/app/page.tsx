@@ -297,7 +297,7 @@ useLayoutEffect(()=>{
         <div className="max-w-[64rem] mx-auto grid justify-between gap-4 sm:grid-cols-2 md:grid-cols-3 snap-x sm:p-8 p-4">
           <div className="flex flex-row gap-4 items-center">
             <FaWhatsapp size={20}/>
-            <a aria-label="WhatsApp" href="WhtsApp: (51) 9.9769-6794" target="_blank" rel="noopener noreferrer">(51) 9.9769-6794</a>
+            <a aria-label="WhatsApp: (51) 9.9769-6794" href="https://api.whatsapp.com/send?phone=5551997696794" target="_blank" rel="noopener noreferrer">(51) 9.9769-6794</a>
           </div>
           <div className="flex flex-row gap-4 items-center">
             <MdMailOutline size={20}/>
