@@ -17,7 +17,7 @@ export default function Home() {
   }, {
     opacity: 1,
     y: 0,
-    duration: 1,
+    duration: .4,
     ease: "power4.out"
   })
 
