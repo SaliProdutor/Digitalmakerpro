@@ -2,8 +2,9 @@
 import { CardFeedback } from "@/components/cardFeedback";
 import Image from "next/image";
 import { useEffect, useLayoutEffect, useRef } from "react";
-import { FaBehance, FaInstagram, FaCode, FaCamera, FaFilm, FaPenNib } from 'react-icons/fa';
-import { FaMeta } from "react-icons/fa6";
+import { FaBehance, FaInstagram, FaCode, FaCamera, FaFilm, FaPenNib, FaWhatsapp, FaAddressBook } from 'react-icons/fa';
+import { FaLocationDot, FaLocationPin, FaMeta } from "react-icons/fa6";
+import { MdMailOutline } from "react-icons/md";
 import { SiAnalogue } from "react-icons/si";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -287,6 +288,24 @@ useLayoutEffect(()=>{
               <li className="text-lg md:text-base mb-2">Gestão de media</li>
               <li className="text-lg md:text-base mb-2">Agendamento de postagens</li>
             </ul>
+          </div>
+        </div>
+      </div>
+      {/* Contato */}
+      <div id="contato" data-section="contato" className='md:pt-[10rem] sm:pt-4 flex gap-16 md:gap-8 flex-col items-center justify-center bg-white md:max-w-full py-16'>
+        <h1 className="text-black font-bold text-2xl">Contato</h1>
+        <div className="max-w-[64rem] mx-auto grid justify-between gap-4 sm:grid-cols-2 md:grid-cols-3 snap-x sm:p-8 p-4">
+          <div className="flex flex-row gap-4 items-center">
+            <FaWhatsapp size={20}/>
+            <a aria-label="WhatsApp" href="https://api.whatsapp.com/send?phone=5551997696794" target="_blank" rel="noopener noreferrer">(51) 9.9769-6794</a>
+          </div>
+          <div className="flex flex-row gap-4 items-center">
+            <MdMailOutline size={20}/>
+            <a aria-label="Email para contato" href="mailto:contato@digitalmakerpro.com" target="_blank" rel="noopener noreferrer">contato@digitalmakerpro.com</a>
+          </div>
+          <div className="flex flex-row gap-4 items-center">
+            <FaLocationDot size={20}/>
+            <a aria-label="Endereço" href="https://maps.app.goo.gl/3LcL2fKFjrrD99Jb7" target="_blank" rel="noopener noreferrer">R. Alberto Bahns, 110, Invernada - Igrejinha/RS 95650-000</a>
           </div>
         </div>
       </div>
