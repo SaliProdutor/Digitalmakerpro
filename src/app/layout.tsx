@@ -88,6 +88,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta property="og:image" content="/Miniatura.png" />
       </head>
       <body className={`${inter.className} bg-purple-white`}>
         <Header/>
