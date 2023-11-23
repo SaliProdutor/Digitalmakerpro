@@ -156,7 +156,7 @@ useLayoutEffect(()=>{
         </div>
       </div>
       {/* Sobre */}
-      <div id="sobre" data-section="sobre" className="container pt-[5rem] grid justify-center items-center bg-gradient-to-bl from-green-primary to-green-secundary md:min-w-[100vw] md:h-screen w-screen" >
+      <div id="sobre" data-section="sobre" className="container overflow-x-hidden pt-[5rem] grid justify-center items-center bg-gradient-to-bl from-green-primary to-green-secundary md:min-w-[100vw] md:h-screen w-screen" >
         <div className='w-screen sm:w-[95vw] md:max-w-[64rem] p-8'>
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-y-12 lg:grid-rows-[auto-1fr]">
             <div className="lg:pl-20 flex justify-center">
