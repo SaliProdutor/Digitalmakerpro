@@ -141,7 +141,7 @@ useLayoutEffect(()=>{
   return (
     <main className="">
       {/* Banner topo */}
-      <div id="topo" data-section="topo" className='container flex justify-center items-center pt-[5rem] py-16 md:py-12 lg:py-32 bg-gradient-to-bl from-purple-primary to-purple-secundary md:min-w-[100vw] w-screen h-screen'>
+      <div id="topo" data-section="topo" className='container flex justify-center items-center pt-[5rem] py-16 md:py-12 lg:py-32 bg-gradient-to-bl from-purple-primary to-purple-secundary md:min-w-[100vw] w-screen md:h-screen'>
         <div className="sm:w-[95vw] md:max-w-[64rem] p-8">
           <h1 className='animation opacity-0 text-4xl md:text-6xl lg:text-7xl text-green-primary font-bold'>SUA MARCA</h1>
           <h2 className='animation opacity-0 text-white font-light text-xl md:text-2xl lg:text:4xl'>nossas soluções personalizadas</h2>
