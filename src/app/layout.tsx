@@ -4,6 +4,7 @@ import './globals.css'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin']})
 
