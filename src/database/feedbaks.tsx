@@ -1,12 +1,5 @@
 const feedbacks = [
     {
-        id: "01",
-        photo: "",
-        name: "Charles Marques",
-        stars: "5",
-        depoiment: "A Digital Maker Pro superou minhas expectativas! Seu planejamento estratégico e design único impulsionaram nossa presença online. Recomendo!"
-    },
-    {
         id: "02",
         photo: "/depoimentos/marcos.jpg",
         name: "Marcos Schroer",
@@ -19,13 +12,6 @@ const feedbacks = [
         name: "Thiago Lampert",
         stars: "5",
         depoiment: "Ótimo trabalho e muito profissional!!"
-      },
-      {
-        id: "04",
-        photo: "/depoimentos/camila.jpg",
-        name: "Camila Melo",
-        stars: "5",
-        depoiment: "A Digital Maker Pro é a escolha certa para quem busca um site estratégico e visualmente cativante. Soluções personalizadas que geram impacto real!"
       },
       {
         id: "05",
