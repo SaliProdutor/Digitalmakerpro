@@ -95,6 +95,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Analytics />
+        <SpeedInsights />
         <Footer/>
       </body>
     </html>
